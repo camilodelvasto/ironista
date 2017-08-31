@@ -12,7 +12,7 @@ module.exports = {
     ]
   },
   loading: false,
-  css: ['assets/normalize.css', 'assets/main.css'],
+  css: ['assets/normalize.css', 'assets/main.scss'],
   build: {
     extend(config, {isClient, dev}) {
       if (isClient) {

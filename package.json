@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-type",
-  "version": "1.0.1",
-  "description": "Creating a fake typography site to show animations in Nuxt routing",
-  "author": "sdras <sarah.drasner@gmail.com>",
+  "name": "ironista",
+  "version": "1.0.0",
+  "description": "Nuxt-powered site for the awesome Ironista organization",
+  "author": "camilodelvasto <camilo.delvasto@gmail.com>",
   "private": true,
   "dependencies": {
     "gsap": "^1.19.1",
