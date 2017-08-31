@@ -150,17 +150,20 @@ export default {
 }
 </script>
 
-<style scoped>
-  @media screen and (min-width: 801px) {
-    h1 {
-      font-family: 'Rufina', serif;
-      font-size: 50px;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    h1 {
-      font-family: 'Rufina', serif;
-      font-size: 45px !important;
-    }
-  }
+<style scoped lang="sass">
+  @media screen and (min-width: 801px)
+    h1
+      font-family: 'Rufina', serif
+      font-size: 50px
+
+  @media screen and (max-width: 800px)
+    h1
+      font-family: 'Rufina', serif
+      font-size: 45px !important
+
+  .container
+    .font-text
+      p
+        color: red !important
+  
 </style>
