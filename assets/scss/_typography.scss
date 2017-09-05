@@ -1,0 +1,36 @@
+html, body {
+  font-family: $font-primary;
+  color: $color-text;
+}
+
+a, a:link {
+  color: $color-emphasis;
+  transition: color 0.5s;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-bg-2;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-secondary;
+  color: $color-emphasis;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+
+  @include breakpoint($sm) {
+    font-size: 40px;
+  }
+}

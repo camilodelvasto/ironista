@@ -1,10 +1,12 @@
 // Fonts
-$font-primary: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-$font-secondary: "Cardo", serif;
+$font-primary: "Cardo", serif;
+$font-secondary: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-logo: "Oleo Script", serif;
 
 // Colors
 $color-text: #000;
 $color-emphasis: #F15A53; //watermelon 
+$color-bg-0: #FFFFFF;
 $color-bg-1: #F0F0F0;
 $color-bg-2: #B6B6B6; //magnesium
 
@@ -22,21 +24,4 @@ $md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );
   @if map-has-key($map, min) and map-has-key($map, max) { $query: append($query, "and") }
   @if map-has-key($map, max) { $query: append($query, "(max-width: #{map-get($map, max)})") }
   @media screen and #{$query} { @content; }
-}
-
-
-
-html, body {
-  font-family: $font-primary;
-  background: #000;
-  color: white;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  position: relative;
-
-  @include breakpoint($sm) {
-    
-  }
-
 }

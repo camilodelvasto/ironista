@@ -1,12 +1,6 @@
 <template>
-  <div class="container index">
+  <div class="index">
     <section>
-      <Mount1 />
-
-      <div class="letter-contain">
-        <LetterT />
-      </div>
-
       <div class="font-text">
         <h1>Playfair Serif</h1>
         <p>Edison bulb wolf humblebrag, chambray skateboard tbh shoreditch four loko unicorn semiotics. Hammock banh mi chillwave, brunch before they sold out roof party fixie prism ramps blog. Ramps yr four dollar toast hammock street art swag lyft, meggings schlitz chicharrones offal vegan selvage normcore. Hot chicken distillery keytar, ennui adaptogen heirloom ramps viral kombucha. Cardigan 8-bit.</p>

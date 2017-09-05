@@ -10,20 +10,5 @@
 </template>
 
 <style scoped>
-  .photo-contain {
-    margin-right: 100px;
-    width: 35%;
-  }
 
-  .photo-text {
-    width: 25%;
-  }
-
-  .photo {
-    border: 1px solid #444;
-  }
-
-  section.photo-area {
-    margin: 100px 0;
-  }
 </style>
