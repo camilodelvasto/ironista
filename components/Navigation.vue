@@ -19,8 +19,16 @@
       <div class="navbar-menu"
         v-bind:class="{ 'is-active': showMobileMenu }"
       >
-        <div class="navbar-start"></div>
-        <div class="navbar-end">
+        <div class="navbar-start"
+          v-on:click="showMobileMenu = false"
+        >
+          <nuxt-link exact to="/" class="navbar-item">Inicio</nuxt-link>
+          <nuxt-link to="/rufina" class="navbar-item">Rufina</nuxt-link>
+          <nuxt-link to="/prata" class="navbar-item">Prata</nuxt-link>
+        </div>
+        <div class="navbar-end"
+          v-on:click="showMobileMenu = false"
+        >
           <nuxt-link exact to="/" class="navbar-item">Inicio</nuxt-link>
           <nuxt-link to="/rufina" class="navbar-item">Rufina</nuxt-link>
           <nuxt-link to="/prata" class="navbar-item">Prata</nuxt-link>
@@ -34,7 +42,7 @@
 @import '~assets/scss/base';
 
 .navbar-burger {
-  transform: translate(-12px,13px);
+  transform: translate(-10px,13px);
 
   @include breakpoint($bulma) {
     display: block;
@@ -77,18 +85,16 @@
     right: 0;
     z-index: 900;
 
+    @include breakpoint($bulma) {
+      display: flex;
+      flex-direction: column;
+    }
+
     &.expanded {
       background-color: $color-bg-dark;
-      transition: background-color 0.5s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
       height: 100%;
     }
-  }
-
-  .navbar-end {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-
   }
 
   .navbar-burger {
@@ -110,6 +116,10 @@
   .navbar-menu {
     box-shadow: none;
 
+    @include breakpoint($bulma) {
+      padding: 0 40px;
+    }
+
     a.navbar-item {
       font-family: $font-primary;
       text-align: center;
@@ -118,6 +128,10 @@
       @include breakpoint($sm) {
         font-size: 50px;
         text-align: right;
+      }
+
+      @include breakpoint($bulma) {
+        display: block;
       }
     }
 
@@ -130,12 +144,46 @@
           color: $color-emphasis;
         }
       }
+
+      @include breakpoint($bulma) {
+        display: flex;
+        flex-direction: column;
+      }      
+    }
+
+    @include breakpoint($bulma) {
+      display: none;
+    }
+
+    .navbar-start {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+
+      @include breakpoint($bulma) {
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
+
+    .navbar-end {
+      flex-direction: row;
+      flex: 1;
+      align-items: center;
+
+      a.navbar-item {
+        font-size: 25px;
+      }
     }
   }
 
   .navbar-brand {
     nav {
       padding: 20px 0 0 20px;
+    }
+
+    @include breakpoint($bulma) {
+      padding: 20px 30px;
     }
   }
 }
@@ -151,7 +199,7 @@ export default {
   },
   data () {
     return {
-      showMobileMenu: true
+      showMobileMenu: false
     }
   }
 }
