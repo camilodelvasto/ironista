@@ -5,10 +5,9 @@
   "author": "camilodelvasto <camilo.delvasto@gmail.com>",
   "private": true,
   "dependencies": {
+    "buefy": "^0.5.1",
     "gsap": "^1.19.1",
-    "nuxt": "1.0.0-alpha.4",
-    "vuetify": "^0.15.0-beta.5",
-    "vuikit": "^0.6.3"
+    "nuxt": "1.0.0-alpha.4"
   },
   "scripts": {
     "dev": "nuxt",

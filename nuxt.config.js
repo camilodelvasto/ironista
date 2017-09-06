@@ -9,12 +9,10 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans:400,700|Oleo+Script|400|Roboto:300,400,500,700|Material+Icons' },
-      { rel: 'stylesheet', href: 'https://unpkg.com/vuetify/dist/vuetify.min.css' }
     ]
   },
   loading: true,
   build: {
-    vendor: ['vuetify'],
     extractCSS: true,
 
     extend(config, {isClient, dev}) {
@@ -23,7 +21,7 @@ module.exports = {
       }
     }
   },
-  plugins: ['~plugins/vuetify.js'],
+  plugins: ['~plugins/buefy.js'],
   css: [
     { src: 'assets/main.scss', lang: 'scss' }
   ]
