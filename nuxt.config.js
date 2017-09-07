@@ -1,17 +1,17 @@
 module.exports = {
   head: {
-    title: 'starter',
+    title: 'Ironista - Laboratorio de cambio cultural',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Cambio cultural a la medida' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans:400,700|Oleo+Script|400|Roboto:300,400,500,700|Material+Icons' },
     ]
   },
-  loading: true,
+  loading: false,
   build: {
     extractCSS: true,
 

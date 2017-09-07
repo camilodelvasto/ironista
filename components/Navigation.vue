@@ -23,15 +23,15 @@
           v-on:click="showMobileMenu = false"
         >
           <nuxt-link exact to="/" class="navbar-item">Inicio</nuxt-link>
-          <nuxt-link to="/rufina" class="navbar-item">Rufina</nuxt-link>
-          <nuxt-link to="/prata" class="navbar-item">Prata</nuxt-link>
+          <nuxt-link to="/rufina" class="navbar-item">Cultura</nuxt-link>
+          <nuxt-link to="/prata" class="navbar-item">Cambio</nuxt-link>
         </div>
         <div class="navbar-end"
           v-on:click="showMobileMenu = false"
         >
-          <nuxt-link exact to="/" class="navbar-item">Inicio</nuxt-link>
-          <nuxt-link to="/rufina" class="navbar-item">Rufina</nuxt-link>
-          <nuxt-link to="/prata" class="navbar-item">Prata</nuxt-link>
+          <nuxt-link exact to="/" class="navbar-item">Acerca de</nuxt-link>
+          <nuxt-link to="/rufina" class="navbar-item">Ofertas</nuxt-link>
+          <nuxt-link to="/prata" class="navbar-item">Contacto</nuxt-link>
         </div>
       </div>
     </nav>
@@ -94,6 +94,8 @@
       background-color: $color-bg-dark;
       transition: background-color 0.2s ease-in-out;
       height: 100%;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -115,6 +117,7 @@
 
   .navbar-menu {
     box-shadow: none;
+    flex: 1;
 
     @include breakpoint($bulma) {
       padding: 0 40px;
@@ -136,6 +139,9 @@
     }
 
     &.is-active {
+      display: flex;
+      flex-direction: column;
+
       a.navbar-item {
         color: $color-text-light;
 
@@ -156,7 +162,7 @@
     }
 
     .navbar-start {
-      padding-top: 20px;
+      padding-top: 60px;
       display: flex;
       flex-direction: column;
 
@@ -169,10 +175,23 @@
     .navbar-end {
       flex-direction: row;
       flex: 1;
-      align-items: center;
+      align-items: flex-end;
+      display: flex;
+      justify-content: center;
+
+      @include breakpoint($bulma) {
+        align-items: center;
+      }
 
       a.navbar-item {
-        font-size: 25px;
+        font-size: 16px;
+        font-family: $font-secondary;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+
+        @include breakpoint($bulma) {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -200,6 +219,15 @@ export default {
   data () {
     return {
       showMobileMenu: false
+    }
+  },
+  watch: {
+    showMobileMenu: function(newVal) {
+      if (newVal) {
+        document.body.classList.add('modal-open');
+      } else {
+        document.body.classList.remove('modal-open');
+      }
     }
   }
 }

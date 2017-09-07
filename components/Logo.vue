@@ -2,7 +2,7 @@
     <nav>
       <nuxt-link exact to="/" class="logo">
         <span class="logo-type">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="100%" viewBox="0 0 607 237" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="100%" viewBox="0 0 607 97" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
           <rect x="0" y="0" width="236.22" height="236.22" style="fill:#fff333;" class="yellow-box" />
           <text class="logo-text" x="252.143px" y="183.232px" style="font-family:'GlacialIndifference-Regular', 'Glacial Indifference';font-size:57.083px;">I<tspan x="283.539px 333.429px 397.306px 450.507px 481.903px 533.507px 572.209px " y="183.232px 183.232px 183.232px 183.232px 183.232px 183.232px 183.232px ">RONISTA</tspan></text>
           <text class="logo-text" x="254.242px" y="219.918px" style="font-family:'GlacialIndifference-Regular', 'Glacial Indifference';font-size:20.417px;">L<tspan x="269.616px 289.257px 307.305px 330.458px 348.608px 366.371px 382.398px 405.55px 423.701px 435.236px 458.389px 470.945px 492.872px 512.717px 525.274px 541.301px 561.146px 579.296px 598.937px " y="219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px 219.918px ">ABORATORIO CULTURAL</tspan></text><clipPath id="_clip1"><rect x="16.724" y="18.143" width="202.78" height="202.78"/></clipPath>
