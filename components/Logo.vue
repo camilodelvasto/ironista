@@ -37,4 +37,8 @@ text.logo-text {
   transform: scale(0.4);
 }
 
+.logo-symbol {
+  fill: $color-bg-dark;
+}
+
 </style>

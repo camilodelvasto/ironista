@@ -51,6 +51,7 @@
   span {
     width: 25px;
     margin-left: -12px;
+    background-color: $color-bg-dark;
 
     &:nth-child(1) {
       margin-top: -10px;
@@ -62,7 +63,9 @@
   }
 
   &.is-active {
-    span {      
+    span {
+      background-color: $color-bg-light;
+
       &:nth-child(1) {
         margin-top: -10px;
         margin-left: -7px;
@@ -74,11 +77,34 @@
       }
     }
   }
+
+  &:hover {
+    background-color: inherit;
+
+    span {
+      background-color: $color-emphasis;
+    }
+  }
+}
+
+@include breakpoint($xs) {
+  .navbar-burger {
+    &:hover {
+      span {
+        background-color: $color-bg-dark;
+      }
+    }
+    &.is-active {
+      &:hover {
+        span {
+          background-color: $color-bg-light;
+        }
+      }
+    }
+  }
 }
 
 .nav-container {
-  height: 90px;
-
   .navbar {
     position: fixed;
     left: 0;
@@ -96,22 +122,6 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-    }
-  }
-
-  .navbar-burger {
-    &.is-active {
-      span {
-        background-color: $color-bg-light;
-      }
-    }
-
-    &:hover {
-      background-color: inherit;
-
-      span {
-        background-color: $color-emphasis;
-      }
     }
   }
 
@@ -197,6 +207,8 @@
   }
 
   .navbar-brand {
+    height: 75px;
+
     nav {
       padding: 20px 0 0 20px;
     }
